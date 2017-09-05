@@ -1,0 +1,29 @@
+reset;
+
+model LinearProg.mod;
+data LinearProg.dat;
+
+
+option solver cplex;
+
+
+
+for {c in SIZE}
+{
+	 for {r in SIZE}
+	 {
+	 	if r == c then
+	 	{
+	 		let b[r] := 1; 
+	 	}
+	 	else
+	 	{
+	 		let b[r] := 0; 
+	 	}
+	 }
+	 solve;
+	 display x;
+}
+
+
+

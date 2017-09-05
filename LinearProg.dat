@@ -1,0 +1,13 @@
+data;
+
+param Real : 1 2 :=
+			1	2 3
+			2	4 7;
+			
+param Imaginary : 1 2 :=
+			1	0 3
+			2	4 7;			
+
+param: SIZE: b :=  
+	 	1	5  
+	 	2	11;
