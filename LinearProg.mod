@@ -1,4 +1,5 @@
-
+# the data assumes two separate matrices for real and complex value
+# the code can be modified to just invert real number
 # calcualte the inverse of a matrix of complex numbers
 reset;
 
