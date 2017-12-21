@@ -18,7 +18,11 @@ subject to axb_real {r in SIZE}:
 	sum {c in SIZE} (Real[r,c] * x[c]- Imaginary[r,c] * y[c]) = b[r]; 
 	
 subject to axb_im {r in SIZE}: 
-	sum {c in SIZE} (Real[r,c] * y[c] + Imaginary[r,c] * x[c]) = 0; 	 
+	sum {c in SIZE} (Real[r,c] * y[c] + Imaginary[r,c] * x[c]) = 0; 
+
+	
+data;
+param: SIZE: branch_fbus branch_tbus branch_z_im branch_z_real branch_rateA branch_rateC := include mgbranchData.dat;	
 
 
 

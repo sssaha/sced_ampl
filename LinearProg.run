@@ -1,10 +1,10 @@
 reset;
 
 model LinearProg.mod;
-data LinearProg.dat;
+#data LinearProg.dat;
 
 
-option solver cplex;
+option solver gurobi;
 
 
 
